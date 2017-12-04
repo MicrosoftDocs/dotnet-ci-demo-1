@@ -1,0 +1,104 @@
+﻿<Type Name="ForwardingProxy&lt;T&gt;" FullName="Microsoft.EntityFrameworkCore.Design.Internal.ForwardingProxy&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class ForwardingProxy&lt;T&gt; : System.Runtime.Remoting.Proxies.RealProxy" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ForwardingProxy`1&lt;T&gt; extends System.Runtime.Remoting.Proxies.RealProxy" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.EntityFrameworkCore.Design.Internal.ForwardingProxy`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class ForwardingProxy(Of T)&#xA;Inherits RealProxy" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.EntityFrameworkCore.Design</AssemblyName>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Runtime.Remoting.Proxies.RealProxy</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>
+                This is a small piece of Remoting magic. It enables us to invoke methods on a
+                remote object without knowing its actual type. The only restriction is that the
+                names and shapes of the types and their members must be the same on each side of
+                the boundary.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ForwardingProxy (object target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Design.Internal.ForwardingProxy`1.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (target As Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Design</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="target">To be added.</param>
+        <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTransparentProxy">
+      <MemberSignature Language="C#" Value="public virtual T GetTransparentProxy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T GetTransparentProxy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Design.Internal.ForwardingProxy`1.GetTransparentProxy" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTransparentProxy () As T" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Design</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invoke">
+      <MemberSignature Language="C#" Value="public override System.Runtime.Remoting.Messaging.IMessage Invoke (System.Runtime.Remoting.Messaging.IMessage msg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Runtime.Remoting.Messaging.IMessage Invoke(class System.Runtime.Remoting.Messaging.IMessage msg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Design.Internal.ForwardingProxy`1.Invoke(System.Runtime.Remoting.Messaging.IMessage)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Invoke (msg As IMessage) As IMessage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Design</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Messaging.IMessage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="msg" Type="System.Runtime.Remoting.Messaging.IMessage" />
+      </Parameters>
+      <Docs>
+        <param name="msg">To be added.</param>
+        <summary>
+                Intercepts method invocations on the object represented by the current instance
+                and forwards them to the target to finish processing.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

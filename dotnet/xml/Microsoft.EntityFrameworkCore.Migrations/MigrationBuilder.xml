@@ -1,0 +1,1742 @@
+﻿<Type Name="MigrationBuilder" FullName="Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder">
+  <TypeSignature Language="C#" Value="public class MigrationBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MigrationBuilder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class MigrationBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MigrationBuilder (string activeProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string activeProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (activeProvider As String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="activeProvider" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="activeProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveProvider">
+      <MemberSignature Language="C#" Value="public virtual string ActiveProvider { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ActiveProvider" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.ActiveProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ActiveProvider As String" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddColumn&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AddColumnOperation&gt; AddColumn&lt;T&gt; (string name, string table, string type = null, Nullable&lt;bool&gt; unicode = null, Nullable&lt;int&gt; maxLength = null, bool rowVersion = false, string schema = null, bool nullable = false, object defaultValue = null, string defaultValueSql = null, string computedColumnSql = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.AddColumnOperation&gt; AddColumn&lt;T&gt;(string name, string table, string type, valuetype System.Nullable`1&lt;bool&gt; unicode, valuetype System.Nullable`1&lt;int32&gt; maxLength, bool rowVersion, string schema, bool nullable, object defaultValue, string defaultValueSql, string computedColumnSql) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.AddColumn``1(System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Boolean,System.String,System.Boolean,System.Object,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AddColumn(Of T) (name As String, table As String, Optional type As String = null, Optional unicode As Nullable(Of Boolean) = null, Optional maxLength As Nullable(Of Integer) = null, Optional rowVersion As Boolean = false, Optional schema As String = null, Optional nullable As Boolean = false, Optional defaultValue As Object = null, Optional defaultValueSql As String = null, Optional computedColumnSql As String = null) As OperationBuilder(Of AddColumnOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AddColumnOperation&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="unicode" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="maxLength" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="rowVersion" Type="System.Boolean" />
+        <Parameter Name="schema" Type="System.String" />
+        <Parameter Name="nullable" Type="System.Boolean" />
+        <Parameter Name="defaultValue" Type="System.Object" />
+        <Parameter Name="defaultValueSql" Type="System.String" />
+        <Parameter Name="computedColumnSql" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="name">To be added.</param>
+        <param name="table">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="unicode">To be added.</param>
+        <param name="maxLength">To be added.</param>
+        <param name="rowVersion">To be added.</param>
+        <param name="schema">To be added.</param>
+        <param name="nullable">To be added.</param>
+        <param name="defaultValue">To be added.</param>
+        <param name="defaultValueSql">To be added.</param>
+        <param name="computedColumnSql">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddForeignKey">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AddForeignKeyOperation&gt; AddForeignKey (string name, string table, string column, string principalTable, string schema = null, string principalSchema = null, string principalColumn = null, Microsoft.EntityFrameworkCore.Migrations.ReferentialAction onUpdate = Microsoft.EntityFrameworkCore.Migrations.ReferentialAction.NoAction, Microsoft.EntityFrameworkCore.Migrations.ReferentialAction onDelete = Microsoft.EntityFrameworkCore.Migrations.ReferentialAction.NoAction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.AddForeignKeyOperation&gt; AddForeignKey(string name, string table, string column, string principalTable, string schema, string principalSchema, string principalColumn, valuetype Microsoft.EntityFrameworkCore.Migrations.ReferentialAction onUpdate, valuetype Microsoft.EntityFrameworkCore.Migrations.ReferentialAction onDelete) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.AddForeignKey(System.String,System.String,System.String,System.String,System.String,System.String,System.String,Microsoft.EntityFrameworkCore.Migrations.ReferentialAction,Microsoft.EntityFrameworkCore.Migrations.ReferentialAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AddForeignKey (name As String, table As String, column As String, principalTable As String, Optional schema As String = null, Optional principalSchema As String = null, Optional principalColumn As String = null, Optional onUpdate As ReferentialAction = Microsoft.EntityFrameworkCore.Migrations.ReferentialAction.NoAction, Optional onDelete As ReferentialAction = Microsoft.EntityFrameworkCore.Migrations.ReferentialAction.NoAction) As OperationBuilder(Of AddForeignKeyOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AddForeignKeyOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="column" Type="System.String" />
+        <Parameter Name="principalTable" Type="System.String" />
+        <Parameter Name="schema" Type="System.String" />
+        <Parameter Name="principalSchema" Type="System.String" />
+        <Parameter Name="principalColumn" Type="System.String" />
+        <Parameter Name="onUpdate" Type="Microsoft.EntityFrameworkCore.Migrations.ReferentialAction" />
+        <Parameter Name="onDelete" Type="Microsoft.EntityFrameworkCore.Migrations.ReferentialAction" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="table">To be added.</param>
+        <param name="column">To be added.</param>
+        <param name="principalTable">To be added.</param>
+        <param name="schema">To be added.</param>
+        <param name="principalSchema">To be added.</param>
+        <param name="principalColumn">To be added.</param>
+        <param name="onUpdate">To be added.</param>
+        <param name="onDelete">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddForeignKey">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AddForeignKeyOperation&gt; AddForeignKey (string name, string table, string[] columns, string principalTable, string schema = null, string principalSchema = null, string[] principalColumns = null, Microsoft.EntityFrameworkCore.Migrations.ReferentialAction onUpdate = Microsoft.EntityFrameworkCore.Migrations.ReferentialAction.NoAction, Microsoft.EntityFrameworkCore.Migrations.ReferentialAction onDelete = Microsoft.EntityFrameworkCore.Migrations.ReferentialAction.NoAction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.AddForeignKeyOperation&gt; AddForeignKey(string name, string table, string[] columns, string principalTable, string schema, string principalSchema, string[] principalColumns, valuetype Microsoft.EntityFrameworkCore.Migrations.ReferentialAction onUpdate, valuetype Microsoft.EntityFrameworkCore.Migrations.ReferentialAction onDelete) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.AddForeignKey(System.String,System.String,System.String[],System.String,System.String,System.String,System.String[],Microsoft.EntityFrameworkCore.Migrations.ReferentialAction,Microsoft.EntityFrameworkCore.Migrations.ReferentialAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AddForeignKey (name As String, table As String, columns As String(), principalTable As String, Optional schema As String = null, Optional principalSchema As String = null, Optional principalColumns As String() = null, Optional onUpdate As ReferentialAction = Microsoft.EntityFrameworkCore.Migrations.ReferentialAction.NoAction, Optional onDelete As ReferentialAction = Microsoft.EntityFrameworkCore.Migrations.ReferentialAction.NoAction) As OperationBuilder(Of AddForeignKeyOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AddForeignKeyOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="columns" Type="System.String[]" />
+        <Parameter Name="principalTable" Type="System.String" />
+        <Parameter Name="schema" Type="System.String" />
+        <Parameter Name="principalSchema" Type="System.String" />
+        <Parameter Name="principalColumns" Type="System.String[]" />
+        <Parameter Name="onUpdate" Type="Microsoft.EntityFrameworkCore.Migrations.ReferentialAction" />
+        <Parameter Name="onDelete" Type="Microsoft.EntityFrameworkCore.Migrations.ReferentialAction" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="table">To be added.</param>
+        <param name="columns">To be added.</param>
+        <param name="principalTable">To be added.</param>
+        <param name="schema">To be added.</param>
+        <param name="principalSchema">To be added.</param>
+        <param name="principalColumns">To be added.</param>
+        <param name="onUpdate">To be added.</param>
+        <param name="onDelete">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPrimaryKey">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AddPrimaryKeyOperation&gt; AddPrimaryKey (string name, string table, string column, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.AddPrimaryKeyOperation&gt; AddPrimaryKey(string name, string table, string column, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.AddPrimaryKey(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AddPrimaryKey (name As String, table As String, column As String, Optional schema As String = null) As OperationBuilder(Of AddPrimaryKeyOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AddPrimaryKeyOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="column" Type="System.String" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="table">To be added.</param>
+        <param name="column">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPrimaryKey">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AddPrimaryKeyOperation&gt; AddPrimaryKey (string name, string table, string[] columns, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.AddPrimaryKeyOperation&gt; AddPrimaryKey(string name, string table, string[] columns, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.AddPrimaryKey(System.String,System.String,System.String[],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AddPrimaryKey (name As String, table As String, columns As String(), Optional schema As String = null) As OperationBuilder(Of AddPrimaryKeyOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AddPrimaryKeyOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="columns" Type="System.String[]" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="table">To be added.</param>
+        <param name="columns">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddUniqueConstraint">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AddUniqueConstraintOperation&gt; AddUniqueConstraint (string name, string table, string column, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.AddUniqueConstraintOperation&gt; AddUniqueConstraint(string name, string table, string column, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.AddUniqueConstraint(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AddUniqueConstraint (name As String, table As String, column As String, Optional schema As String = null) As OperationBuilder(Of AddUniqueConstraintOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AddUniqueConstraintOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="column" Type="System.String" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="table">To be added.</param>
+        <param name="column">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddUniqueConstraint">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AddUniqueConstraintOperation&gt; AddUniqueConstraint (string name, string table, string[] columns, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.AddUniqueConstraintOperation&gt; AddUniqueConstraint(string name, string table, string[] columns, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.AddUniqueConstraint(System.String,System.String,System.String[],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AddUniqueConstraint (name As String, table As String, columns As String(), Optional schema As String = null) As OperationBuilder(Of AddUniqueConstraintOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AddUniqueConstraintOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="columns" Type="System.String[]" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="table">To be added.</param>
+        <param name="columns">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterColumn&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AlterColumnOperation&gt; AlterColumn&lt;T&gt; (string name, string table, string type = null, Nullable&lt;bool&gt; unicode = null, Nullable&lt;int&gt; maxLength = null, bool rowVersion = false, string schema = null, bool nullable = false, object defaultValue = null, string defaultValueSql = null, string computedColumnSql = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.AlterColumnOperation&gt; AlterColumn&lt;T&gt;(string name, string table, string type, valuetype System.Nullable`1&lt;bool&gt; unicode, valuetype System.Nullable`1&lt;int32&gt; maxLength, bool rowVersion, string schema, bool nullable, object defaultValue, string defaultValueSql, string computedColumnSql) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.AlterColumn``1(System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Boolean,System.String,System.Boolean,System.Object,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AlterColumn(Of T) (name As String, table As String, Optional type As String = null, Optional unicode As Nullable(Of Boolean) = null, Optional maxLength As Nullable(Of Integer) = null, Optional rowVersion As Boolean = false, Optional schema As String = null, Optional nullable As Boolean = false, Optional defaultValue As Object = null, Optional defaultValueSql As String = null, Optional computedColumnSql As String = null) As OperationBuilder(Of AlterColumnOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AlterColumnOperation&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="unicode" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="maxLength" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="rowVersion" Type="System.Boolean" />
+        <Parameter Name="schema" Type="System.String" />
+        <Parameter Name="nullable" Type="System.Boolean" />
+        <Parameter Name="defaultValue" Type="System.Object" />
+        <Parameter Name="defaultValueSql" Type="System.String" />
+        <Parameter Name="computedColumnSql" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="name">To be added.</param>
+        <param name="table">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="unicode">To be added.</param>
+        <param name="maxLength">To be added.</param>
+        <param name="rowVersion">To be added.</param>
+        <param name="schema">To be added.</param>
+        <param name="nullable">To be added.</param>
+        <param name="defaultValue">To be added.</param>
+        <param name="defaultValueSql">To be added.</param>
+        <param name="computedColumnSql">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterColumn&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.AlterOperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AlterColumnOperation&gt; AlterColumn&lt;T&gt; (string name, string table, string type = null, Nullable&lt;bool&gt; unicode = null, Nullable&lt;int&gt; maxLength = null, bool rowVersion = false, string schema = null, bool nullable = false, object defaultValue = null, string defaultValueSql = null, string computedColumnSql = null, Type oldClrType = null, string oldType = null, Nullable&lt;bool&gt; oldUnicode = null, Nullable&lt;int&gt; oldMaxLength = null, bool oldRowVersion = false, bool oldNullable = false, object oldDefaultValue = null, string oldDefaultValueSql = null, string oldComputedColumnSql = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.AlterOperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.AlterColumnOperation&gt; AlterColumn&lt;T&gt;(string name, string table, string type, valuetype System.Nullable`1&lt;bool&gt; unicode, valuetype System.Nullable`1&lt;int32&gt; maxLength, bool rowVersion, string schema, bool nullable, object defaultValue, string defaultValueSql, string computedColumnSql, class System.Type oldClrType, string oldType, valuetype System.Nullable`1&lt;bool&gt; oldUnicode, valuetype System.Nullable`1&lt;int32&gt; oldMaxLength, bool oldRowVersion, bool oldNullable, object oldDefaultValue, string oldDefaultValueSql, string oldComputedColumnSql) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.AlterColumn``1(System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Boolean,System.String,System.Boolean,System.Object,System.String,System.String,System.Type,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Boolean,System.Boolean,System.Object,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.AlterOperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AlterColumnOperation&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="unicode" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="maxLength" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="rowVersion" Type="System.Boolean" />
+        <Parameter Name="schema" Type="System.String" />
+        <Parameter Name="nullable" Type="System.Boolean" />
+        <Parameter Name="defaultValue" Type="System.Object" />
+        <Parameter Name="defaultValueSql" Type="System.String" />
+        <Parameter Name="computedColumnSql" Type="System.String" />
+        <Parameter Name="oldClrType" Type="System.Type" />
+        <Parameter Name="oldType" Type="System.String" />
+        <Parameter Name="oldUnicode" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="oldMaxLength" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="oldRowVersion" Type="System.Boolean" />
+        <Parameter Name="oldNullable" Type="System.Boolean" />
+        <Parameter Name="oldDefaultValue" Type="System.Object" />
+        <Parameter Name="oldDefaultValueSql" Type="System.String" />
+        <Parameter Name="oldComputedColumnSql" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="name">To be added.</param>
+        <param name="table">To be added.</param>
+        <param name="type">To be added.</param>
+        <param name="unicode">To be added.</param>
+        <param name="maxLength">To be added.</param>
+        <param name="rowVersion">To be added.</param>
+        <param name="schema">To be added.</param>
+        <param name="nullable">To be added.</param>
+        <param name="defaultValue">To be added.</param>
+        <param name="defaultValueSql">To be added.</param>
+        <param name="computedColumnSql">To be added.</param>
+        <param name="oldClrType">To be added.</param>
+        <param name="oldType">To be added.</param>
+        <param name="oldUnicode">To be added.</param>
+        <param name="oldMaxLength">To be added.</param>
+        <param name="oldRowVersion">To be added.</param>
+        <param name="oldNullable">To be added.</param>
+        <param name="oldDefaultValue">To be added.</param>
+        <param name="oldDefaultValueSql">To be added.</param>
+        <param name="oldComputedColumnSql">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterDatabase">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.AlterOperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AlterDatabaseOperation&gt; AlterDatabase ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.AlterOperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.AlterDatabaseOperation&gt; AlterDatabase() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.AlterDatabase" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AlterDatabase () As AlterOperationBuilder(Of AlterDatabaseOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.AlterOperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AlterDatabaseOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterSequence">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AlterSequenceOperation&gt; AlterSequence (string name, string schema = null, int incrementBy = 1, Nullable&lt;long&gt; minValue = null, Nullable&lt;long&gt; maxValue = null, bool cyclic = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.AlterSequenceOperation&gt; AlterSequence(string name, string schema, int32 incrementBy, valuetype System.Nullable`1&lt;int64&gt; minValue, valuetype System.Nullable`1&lt;int64&gt; maxValue, bool cyclic) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.AlterSequence(System.String,System.String,System.Int32,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AlterSequence (name As String, Optional schema As String = null, Optional incrementBy As Integer = 1, Optional minValue As Nullable(Of Long) = null, Optional maxValue As Nullable(Of Long) = null, Optional cyclic As Boolean = false) As OperationBuilder(Of AlterSequenceOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AlterSequenceOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="schema" Type="System.String" />
+        <Parameter Name="incrementBy" Type="System.Int32" />
+        <Parameter Name="minValue" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="maxValue" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="cyclic" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="schema">To be added.</param>
+        <param name="incrementBy">To be added.</param>
+        <param name="minValue">To be added.</param>
+        <param name="maxValue">To be added.</param>
+        <param name="cyclic">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterSequence">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.AlterOperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AlterSequenceOperation&gt; AlterSequence (string name, string schema = null, int incrementBy = 1, Nullable&lt;long&gt; minValue = null, Nullable&lt;long&gt; maxValue = null, bool cyclic = false, int oldIncrementBy = 1, Nullable&lt;long&gt; oldMinValue = null, Nullable&lt;long&gt; oldMaxValue = null, bool oldCyclic = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.AlterOperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.AlterSequenceOperation&gt; AlterSequence(string name, string schema, int32 incrementBy, valuetype System.Nullable`1&lt;int64&gt; minValue, valuetype System.Nullable`1&lt;int64&gt; maxValue, bool cyclic, int32 oldIncrementBy, valuetype System.Nullable`1&lt;int64&gt; oldMinValue, valuetype System.Nullable`1&lt;int64&gt; oldMaxValue, bool oldCyclic) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.AlterSequence(System.String,System.String,System.Int32,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Boolean,System.Int32,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AlterSequence (name As String, Optional schema As String = null, Optional incrementBy As Integer = 1, Optional minValue As Nullable(Of Long) = null, Optional maxValue As Nullable(Of Long) = null, Optional cyclic As Boolean = false, Optional oldIncrementBy As Integer = 1, Optional oldMinValue As Nullable(Of Long) = null, Optional oldMaxValue As Nullable(Of Long) = null, Optional oldCyclic As Boolean = false) As AlterOperationBuilder(Of AlterSequenceOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.AlterOperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AlterSequenceOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="schema" Type="System.String" />
+        <Parameter Name="incrementBy" Type="System.Int32" />
+        <Parameter Name="minValue" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="maxValue" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="cyclic" Type="System.Boolean" />
+        <Parameter Name="oldIncrementBy" Type="System.Int32" />
+        <Parameter Name="oldMinValue" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="oldMaxValue" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="oldCyclic" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="schema">To be added.</param>
+        <param name="incrementBy">To be added.</param>
+        <param name="minValue">To be added.</param>
+        <param name="maxValue">To be added.</param>
+        <param name="cyclic">To be added.</param>
+        <param name="oldIncrementBy">To be added.</param>
+        <param name="oldMinValue">To be added.</param>
+        <param name="oldMaxValue">To be added.</param>
+        <param name="oldCyclic">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterTable">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.AlterOperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AlterTableOperation&gt; AlterTable (string name, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.AlterOperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.AlterTableOperation&gt; AlterTable(string name, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.AlterTable(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AlterTable (name As String, Optional schema As String = null) As AlterOperationBuilder(Of AlterTableOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.AlterOperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.AlterTableOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIndex">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.CreateIndexOperation&gt; CreateIndex (string name, string table, string column, string schema = null, bool unique = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.CreateIndexOperation&gt; CreateIndex(string name, string table, string column, string schema, bool unique) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.CreateIndex(System.String,System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateIndex (name As String, table As String, column As String, Optional schema As String = null, Optional unique As Boolean = false) As OperationBuilder(Of CreateIndexOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.CreateIndexOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="column" Type="System.String" />
+        <Parameter Name="schema" Type="System.String" />
+        <Parameter Name="unique" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="table">To be added.</param>
+        <param name="column">To be added.</param>
+        <param name="schema">To be added.</param>
+        <param name="unique">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIndex">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.CreateIndexOperation&gt; CreateIndex (string name, string table, string[] columns, string schema = null, bool unique = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.CreateIndexOperation&gt; CreateIndex(string name, string table, string[] columns, string schema, bool unique) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.CreateIndex(System.String,System.String,System.String[],System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateIndex (name As String, table As String, columns As String(), Optional schema As String = null, Optional unique As Boolean = false) As OperationBuilder(Of CreateIndexOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.CreateIndexOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="columns" Type="System.String[]" />
+        <Parameter Name="schema" Type="System.String" />
+        <Parameter Name="unique" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="table">To be added.</param>
+        <param name="columns">To be added.</param>
+        <param name="schema">To be added.</param>
+        <param name="unique">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIndex">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.CreateIndexOperation&gt; CreateIndex (string name, string table, string column, string schema = null, bool unique = false, string filter = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.CreateIndexOperation&gt; CreateIndex(string name, string table, string column, string schema, bool unique, string filter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.CreateIndex(System.String,System.String,System.String,System.String,System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateIndex (name As String, table As String, column As String, Optional schema As String = null, Optional unique As Boolean = false, Optional filter As String = null) As OperationBuilder(Of CreateIndexOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.CreateIndexOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="column" Type="System.String" />
+        <Parameter Name="schema" Type="System.String" />
+        <Parameter Name="unique" Type="System.Boolean" />
+        <Parameter Name="filter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="table">To be added.</param>
+        <param name="column">To be added.</param>
+        <param name="schema">To be added.</param>
+        <param name="unique">To be added.</param>
+        <param name="filter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIndex">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.CreateIndexOperation&gt; CreateIndex (string name, string table, string[] columns, string schema = null, bool unique = false, string filter = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.CreateIndexOperation&gt; CreateIndex(string name, string table, string[] columns, string schema, bool unique, string filter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.CreateIndex(System.String,System.String,System.String[],System.String,System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateIndex (name As String, table As String, columns As String(), Optional schema As String = null, Optional unique As Boolean = false, Optional filter As String = null) As OperationBuilder(Of CreateIndexOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.CreateIndexOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="columns" Type="System.String[]" />
+        <Parameter Name="schema" Type="System.String" />
+        <Parameter Name="unique" Type="System.Boolean" />
+        <Parameter Name="filter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="table">To be added.</param>
+        <param name="columns">To be added.</param>
+        <param name="schema">To be added.</param>
+        <param name="unique">To be added.</param>
+        <param name="filter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSequence">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.CreateSequenceOperation&gt; CreateSequence (string name, string schema = null, long startValue = 1, int incrementBy = 1, Nullable&lt;long&gt; minValue = null, Nullable&lt;long&gt; maxValue = null, bool cyclic = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.CreateSequenceOperation&gt; CreateSequence(string name, string schema, int64 startValue, int32 incrementBy, valuetype System.Nullable`1&lt;int64&gt; minValue, valuetype System.Nullable`1&lt;int64&gt; maxValue, bool cyclic) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.CreateSequence(System.String,System.String,System.Int64,System.Int32,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateSequence (name As String, Optional schema As String = null, Optional startValue As Long = 1, Optional incrementBy As Integer = 1, Optional minValue As Nullable(Of Long) = null, Optional maxValue As Nullable(Of Long) = null, Optional cyclic As Boolean = false) As OperationBuilder(Of CreateSequenceOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.CreateSequenceOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="schema" Type="System.String" />
+        <Parameter Name="startValue" Type="System.Int64" />
+        <Parameter Name="incrementBy" Type="System.Int32" />
+        <Parameter Name="minValue" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="maxValue" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="cyclic" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="schema">To be added.</param>
+        <param name="startValue">To be added.</param>
+        <param name="incrementBy">To be added.</param>
+        <param name="minValue">To be added.</param>
+        <param name="maxValue">To be added.</param>
+        <param name="cyclic">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSequence&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.CreateSequenceOperation&gt; CreateSequence&lt;T&gt; (string name, string schema = null, long startValue = 1, int incrementBy = 1, Nullable&lt;long&gt; minValue = null, Nullable&lt;long&gt; maxValue = null, bool cyclic = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.CreateSequenceOperation&gt; CreateSequence&lt;T&gt;(string name, string schema, int64 startValue, int32 incrementBy, valuetype System.Nullable`1&lt;int64&gt; minValue, valuetype System.Nullable`1&lt;int64&gt; maxValue, bool cyclic) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.CreateSequence``1(System.String,System.String,System.Int64,System.Int32,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateSequence(Of T) (name As String, Optional schema As String = null, Optional startValue As Long = 1, Optional incrementBy As Integer = 1, Optional minValue As Nullable(Of Long) = null, Optional maxValue As Nullable(Of Long) = null, Optional cyclic As Boolean = false) As OperationBuilder(Of CreateSequenceOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.CreateSequenceOperation&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="schema" Type="System.String" />
+        <Parameter Name="startValue" Type="System.Int64" />
+        <Parameter Name="incrementBy" Type="System.Int32" />
+        <Parameter Name="minValue" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="maxValue" Type="System.Nullable&lt;System.Int64&gt;" />
+        <Parameter Name="cyclic" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="name">To be added.</param>
+        <param name="schema">To be added.</param>
+        <param name="startValue">To be added.</param>
+        <param name="incrementBy">To be added.</param>
+        <param name="minValue">To be added.</param>
+        <param name="maxValue">To be added.</param>
+        <param name="cyclic">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTable&lt;TColumns&gt;">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder&lt;TColumns&gt; CreateTable&lt;TColumns&gt; (string name, Func&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.ColumnsBuilder,TColumns&gt; columns, string schema = null, Action&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder&lt;TColumns&gt;&gt; constraints = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder`1&lt;!!TColumns&gt; CreateTable&lt;TColumns&gt;(string name, class System.Func`2&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.ColumnsBuilder, !!TColumns&gt; columns, string schema, class System.Action`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder`1&lt;!!TColumns&gt;&gt; constraints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.CreateTable``1(System.String,System.Func{Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.ColumnsBuilder,``0},System.String,System.Action{Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateTable(Of TColumns) (name As String, columns As Func(Of ColumnsBuilder, TColumns), Optional schema As String = null, Optional constraints As Action(Of CreateTableBuilder(Of TColumns)) = null) As CreateTableBuilder(Of TColumns)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder&lt;TColumns&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TColumns" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="columns" Type="System.Func&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.ColumnsBuilder,TColumns&gt;" />
+        <Parameter Name="schema" Type="System.String" />
+        <Parameter Name="constraints" Type="System.Action&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.CreateTableBuilder&lt;TColumns&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TColumns">To be added.</typeparam>
+        <param name="name">To be added.</param>
+        <param name="columns">To be added.</param>
+        <param name="schema">To be added.</param>
+        <param name="constraints">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteData">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DeleteDataOperation&gt; DeleteData (string table, string keyColumn, object keyValue, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.DeleteDataOperation&gt; DeleteData(string table, string keyColumn, object keyValue, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.DeleteData(System.String,System.String,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteData (table As String, keyColumn As String, keyValue As Object, Optional schema As String = null) As OperationBuilder(Of DeleteDataOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DeleteDataOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="keyColumn" Type="System.String" />
+        <Parameter Name="keyValue" Type="System.Object" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="table">To be added.</param>
+        <param name="keyColumn">To be added.</param>
+        <param name="keyValue">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteData">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DeleteDataOperation&gt; DeleteData (string table, string keyColumn, object[] keyValues, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.DeleteDataOperation&gt; DeleteData(string table, string keyColumn, object[] keyValues, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.DeleteData(System.String,System.String,System.Object[],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteData (table As String, keyColumn As String, keyValues As Object(), Optional schema As String = null) As OperationBuilder(Of DeleteDataOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DeleteDataOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="keyColumn" Type="System.String" />
+        <Parameter Name="keyValues" Type="System.Object[]" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="table">To be added.</param>
+        <param name="keyColumn">To be added.</param>
+        <param name="keyValues">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteData">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DeleteDataOperation&gt; DeleteData (string table, string[] keyColumns, object[,] keyValues, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.DeleteDataOperation&gt; DeleteData(string table, string[] keyColumns, object[,] keyValues, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.DeleteData(System.String,System.String[],System.Object[0:,0:],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteData (table As String, keyColumns As String(), keyValues As Object(,), Optional schema As String = null) As OperationBuilder(Of DeleteDataOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DeleteDataOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="keyColumns" Type="System.String[]" />
+        <Parameter Name="keyValues" Type="System.Object[,]" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="table">To be added.</param>
+        <param name="keyColumns">To be added.</param>
+        <param name="keyValues">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteData">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DeleteDataOperation&gt; DeleteData (string table, string[] keyColumns, object[] keyValues, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.DeleteDataOperation&gt; DeleteData(string table, string[] keyColumns, object[] keyValues, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.DeleteData(System.String,System.String[],System.Object[],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeleteData (table As String, keyColumns As String(), keyValues As Object(), Optional schema As String = null) As OperationBuilder(Of DeleteDataOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DeleteDataOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="keyColumns" Type="System.String[]" />
+        <Parameter Name="keyValues" Type="System.Object[]" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="table">To be added.</param>
+        <param name="keyColumns">To be added.</param>
+        <param name="keyValues">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropColumn">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DropColumnOperation&gt; DropColumn (string name, string table, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.DropColumnOperation&gt; DropColumn(string name, string table, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.DropColumn(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DropColumn (name As String, table As String, Optional schema As String = null) As OperationBuilder(Of DropColumnOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DropColumnOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="table">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropForeignKey">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DropForeignKeyOperation&gt; DropForeignKey (string name, string table, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.DropForeignKeyOperation&gt; DropForeignKey(string name, string table, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.DropForeignKey(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DropForeignKey (name As String, table As String, Optional schema As String = null) As OperationBuilder(Of DropForeignKeyOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DropForeignKeyOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="table">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropIndex">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DropIndexOperation&gt; DropIndex (string name, string table = null, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.DropIndexOperation&gt; DropIndex(string name, string table, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.DropIndex(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DropIndex (name As String, Optional table As String = null, Optional schema As String = null) As OperationBuilder(Of DropIndexOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DropIndexOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="table">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropPrimaryKey">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DropPrimaryKeyOperation&gt; DropPrimaryKey (string name, string table, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.DropPrimaryKeyOperation&gt; DropPrimaryKey(string name, string table, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.DropPrimaryKey(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DropPrimaryKey (name As String, table As String, Optional schema As String = null) As OperationBuilder(Of DropPrimaryKeyOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DropPrimaryKeyOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="table">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropSchema">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DropSchemaOperation&gt; DropSchema (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.DropSchemaOperation&gt; DropSchema(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.DropSchema(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DropSchema (name As String) As OperationBuilder(Of DropSchemaOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DropSchemaOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropSequence">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DropSequenceOperation&gt; DropSequence (string name, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.DropSequenceOperation&gt; DropSequence(string name, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.DropSequence(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DropSequence (name As String, Optional schema As String = null) As OperationBuilder(Of DropSequenceOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DropSequenceOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropTable">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DropTableOperation&gt; DropTable (string name, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.DropTableOperation&gt; DropTable(string name, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.DropTable(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DropTable (name As String, Optional schema As String = null) As OperationBuilder(Of DropTableOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DropTableOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropUniqueConstraint">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DropUniqueConstraintOperation&gt; DropUniqueConstraint (string name, string table, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.DropUniqueConstraintOperation&gt; DropUniqueConstraint(string name, string table, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.DropUniqueConstraint(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DropUniqueConstraint (name As String, table As String, Optional schema As String = null) As OperationBuilder(Of DropUniqueConstraintOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.DropUniqueConstraintOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="table">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnsureSchema">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.EnsureSchemaOperation&gt; EnsureSchema (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.EnsureSchemaOperation&gt; EnsureSchema(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.EnsureSchema(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function EnsureSchema (name As String) As OperationBuilder(Of EnsureSchemaOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.EnsureSchemaOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertData">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.InsertDataOperation&gt; InsertData (string table, string column, object value, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.InsertDataOperation&gt; InsertData(string table, string column, object value, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.InsertData(System.String,System.String,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function InsertData (table As String, column As String, value As Object, Optional schema As String = null) As OperationBuilder(Of InsertDataOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.InsertDataOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="column" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="table">To be added.</param>
+        <param name="column">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertData">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.InsertDataOperation&gt; InsertData (string table, string column, object[] values, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.InsertDataOperation&gt; InsertData(string table, string column, object[] values, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.InsertData(System.String,System.String,System.Object[],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function InsertData (table As String, column As String, values As Object(), Optional schema As String = null) As OperationBuilder(Of InsertDataOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.InsertDataOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="column" Type="System.String" />
+        <Parameter Name="values" Type="System.Object[]" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="table">To be added.</param>
+        <param name="column">To be added.</param>
+        <param name="values">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertData">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.InsertDataOperation&gt; InsertData (string table, string[] columns, object[,] values, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.InsertDataOperation&gt; InsertData(string table, string[] columns, object[,] values, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.InsertData(System.String,System.String[],System.Object[0:,0:],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function InsertData (table As String, columns As String(), values As Object(,), Optional schema As String = null) As OperationBuilder(Of InsertDataOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.InsertDataOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="columns" Type="System.String[]" />
+        <Parameter Name="values" Type="System.Object[,]" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="table">To be added.</param>
+        <param name="columns">To be added.</param>
+        <param name="values">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertData">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.InsertDataOperation&gt; InsertData (string table, string[] columns, object[] values, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.InsertDataOperation&gt; InsertData(string table, string[] columns, object[] values, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.InsertData(System.String,System.String[],System.Object[],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function InsertData (table As String, columns As String(), values As Object(), Optional schema As String = null) As OperationBuilder(Of InsertDataOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.InsertDataOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="columns" Type="System.String[]" />
+        <Parameter Name="values" Type="System.Object[]" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="table">To be added.</param>
+        <param name="columns">To be added.</param>
+        <param name="values">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Operations">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.List&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation&gt; Operations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation&gt; Operations" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.Operations" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Operations As List(Of MigrationOperation)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenameColumn">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.RenameColumnOperation&gt; RenameColumn (string name, string table, string newName, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.RenameColumnOperation&gt; RenameColumn(string name, string table, string newName, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.RenameColumn(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RenameColumn (name As String, table As String, newName As String, Optional schema As String = null) As OperationBuilder(Of RenameColumnOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.RenameColumnOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="newName" Type="System.String" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="table">To be added.</param>
+        <param name="newName">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenameIndex">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.RenameIndexOperation&gt; RenameIndex (string name, string newName, string table = null, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.RenameIndexOperation&gt; RenameIndex(string name, string newName, string table, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.RenameIndex(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RenameIndex (name As String, newName As String, Optional table As String = null, Optional schema As String = null) As OperationBuilder(Of RenameIndexOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.RenameIndexOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="newName" Type="System.String" />
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="newName">To be added.</param>
+        <param name="table">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenameSequence">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.RenameSequenceOperation&gt; RenameSequence (string name, string schema = null, string newName = null, string newSchema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.RenameSequenceOperation&gt; RenameSequence(string name, string schema, string newName, string newSchema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.RenameSequence(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RenameSequence (name As String, Optional schema As String = null, Optional newName As String = null, Optional newSchema As String = null) As OperationBuilder(Of RenameSequenceOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.RenameSequenceOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="schema" Type="System.String" />
+        <Parameter Name="newName" Type="System.String" />
+        <Parameter Name="newSchema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="schema">To be added.</param>
+        <param name="newName">To be added.</param>
+        <param name="newSchema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenameTable">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.RenameTableOperation&gt; RenameTable (string name, string schema = null, string newName = null, string newSchema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.RenameTableOperation&gt; RenameTable(string name, string schema, string newName, string newSchema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.RenameTable(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RenameTable (name As String, Optional schema As String = null, Optional newName As String = null, Optional newSchema As String = null) As OperationBuilder(Of RenameTableOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.RenameTableOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="schema" Type="System.String" />
+        <Parameter Name="newName" Type="System.String" />
+        <Parameter Name="newSchema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="schema">To be added.</param>
+        <param name="newName">To be added.</param>
+        <param name="newSchema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RestartSequence">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.RestartSequenceOperation&gt; RestartSequence (string name, long startValue = 1, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.RestartSequenceOperation&gt; RestartSequence(string name, int64 startValue, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.RestartSequence(System.String,System.Int64,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RestartSequence (name As String, Optional startValue As Long = 1, Optional schema As String = null) As OperationBuilder(Of RestartSequenceOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.RestartSequenceOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="startValue" Type="System.Int64" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="startValue">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sql">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.SqlOperation&gt; Sql (string sql, bool suppressTransaction = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.SqlOperation&gt; Sql(string sql, bool suppressTransaction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.Sql(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Sql (sql As String, Optional suppressTransaction As Boolean = false) As OperationBuilder(Of SqlOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.SqlOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sql" Type="System.String" />
+        <Parameter Name="suppressTransaction" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="sql">To be added.</param>
+        <param name="suppressTransaction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateData">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt; UpdateData (string table, string keyColumn, object keyValue, string column, object value, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt; UpdateData(string table, string keyColumn, object keyValue, string column, object value, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.UpdateData(System.String,System.String,System.Object,System.String,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateData (table As String, keyColumn As String, keyValue As Object, column As String, value As Object, Optional schema As String = null) As OperationBuilder(Of UpdateDataOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="keyColumn" Type="System.String" />
+        <Parameter Name="keyValue" Type="System.Object" />
+        <Parameter Name="column" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="table">To be added.</param>
+        <param name="keyColumn">To be added.</param>
+        <param name="keyValue">To be added.</param>
+        <param name="column">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateData">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt; UpdateData (string table, string keyColumn, object keyValue, string[] columns, object[] values, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt; UpdateData(string table, string keyColumn, object keyValue, string[] columns, object[] values, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.UpdateData(System.String,System.String,System.Object,System.String[],System.Object[],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateData (table As String, keyColumn As String, keyValue As Object, columns As String(), values As Object(), Optional schema As String = null) As OperationBuilder(Of UpdateDataOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="keyColumn" Type="System.String" />
+        <Parameter Name="keyValue" Type="System.Object" />
+        <Parameter Name="columns" Type="System.String[]" />
+        <Parameter Name="values" Type="System.Object[]" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="table">To be added.</param>
+        <param name="keyColumn">To be added.</param>
+        <param name="keyValue">To be added.</param>
+        <param name="columns">To be added.</param>
+        <param name="values">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateData">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt; UpdateData (string table, string keyColumn, object[] keyValues, string column, object[] values, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt; UpdateData(string table, string keyColumn, object[] keyValues, string column, object[] values, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.UpdateData(System.String,System.String,System.Object[],System.String,System.Object[],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateData (table As String, keyColumn As String, keyValues As Object(), column As String, values As Object(), Optional schema As String = null) As OperationBuilder(Of UpdateDataOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="keyColumn" Type="System.String" />
+        <Parameter Name="keyValues" Type="System.Object[]" />
+        <Parameter Name="column" Type="System.String" />
+        <Parameter Name="values" Type="System.Object[]" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="table">To be added.</param>
+        <param name="keyColumn">To be added.</param>
+        <param name="keyValues">To be added.</param>
+        <param name="column">To be added.</param>
+        <param name="values">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateData">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt; UpdateData (string table, string keyColumn, object[] keyValues, string[] columns, object[,] values, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt; UpdateData(string table, string keyColumn, object[] keyValues, string[] columns, object[,] values, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.UpdateData(System.String,System.String,System.Object[],System.String[],System.Object[0:,0:],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateData (table As String, keyColumn As String, keyValues As Object(), columns As String(), values As Object(,), Optional schema As String = null) As OperationBuilder(Of UpdateDataOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="keyColumn" Type="System.String" />
+        <Parameter Name="keyValues" Type="System.Object[]" />
+        <Parameter Name="columns" Type="System.String[]" />
+        <Parameter Name="values" Type="System.Object[,]" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="table">To be added.</param>
+        <param name="keyColumn">To be added.</param>
+        <param name="keyValues">To be added.</param>
+        <param name="columns">To be added.</param>
+        <param name="values">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateData">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt; UpdateData (string table, string[] keyColumns, object[,] keyValues, string column, object[] values, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt; UpdateData(string table, string[] keyColumns, object[,] keyValues, string column, object[] values, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.UpdateData(System.String,System.String[],System.Object[0:,0:],System.String,System.Object[],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateData (table As String, keyColumns As String(), keyValues As Object(,), column As String, values As Object(), Optional schema As String = null) As OperationBuilder(Of UpdateDataOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="keyColumns" Type="System.String[]" />
+        <Parameter Name="keyValues" Type="System.Object[,]" />
+        <Parameter Name="column" Type="System.String" />
+        <Parameter Name="values" Type="System.Object[]" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="table">To be added.</param>
+        <param name="keyColumns">To be added.</param>
+        <param name="keyValues">To be added.</param>
+        <param name="column">To be added.</param>
+        <param name="values">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateData">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt; UpdateData (string table, string[] keyColumns, object[,] keyValues, string[] columns, object[,] values, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt; UpdateData(string table, string[] keyColumns, object[,] keyValues, string[] columns, object[,] values, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.UpdateData(System.String,System.String[],System.Object[0:,0:],System.String[],System.Object[0:,0:],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateData (table As String, keyColumns As String(), keyValues As Object(,), columns As String(), values As Object(,), Optional schema As String = null) As OperationBuilder(Of UpdateDataOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="keyColumns" Type="System.String[]" />
+        <Parameter Name="keyValues" Type="System.Object[,]" />
+        <Parameter Name="columns" Type="System.String[]" />
+        <Parameter Name="values" Type="System.Object[,]" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="table">To be added.</param>
+        <param name="keyColumns">To be added.</param>
+        <param name="keyValues">To be added.</param>
+        <param name="columns">To be added.</param>
+        <param name="values">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateData">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt; UpdateData (string table, string[] keyColumns, object[] keyValues, string column, object value, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt; UpdateData(string table, string[] keyColumns, object[] keyValues, string column, object value, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.UpdateData(System.String,System.String[],System.Object[],System.String,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateData (table As String, keyColumns As String(), keyValues As Object(), column As String, value As Object, Optional schema As String = null) As OperationBuilder(Of UpdateDataOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="keyColumns" Type="System.String[]" />
+        <Parameter Name="keyValues" Type="System.Object[]" />
+        <Parameter Name="column" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="table">To be added.</param>
+        <param name="keyColumns">To be added.</param>
+        <param name="keyValues">To be added.</param>
+        <param name="column">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateData">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt; UpdateData (string table, string[] keyColumns, object[] keyValues, string[] columns, object[] values, string schema = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder`1&lt;class Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt; UpdateData(string table, string[] keyColumns, object[] keyValues, string[] columns, object[] values, string schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder.UpdateData(System.String,System.String[],System.Object[],System.String[],System.Object[],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function UpdateData (table As String, keyColumns As String(), keyValues As Object(), columns As String(), values As Object(), Optional schema As String = null) As OperationBuilder(Of UpdateDataOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.EntityFrameworkCore.Relational</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.EntityFrameworkCore.Migrations.Operations.Builders.OperationBuilder&lt;Microsoft.EntityFrameworkCore.Migrations.Operations.UpdateDataOperation&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.String" />
+        <Parameter Name="keyColumns" Type="System.String[]" />
+        <Parameter Name="keyValues" Type="System.Object[]" />
+        <Parameter Name="columns" Type="System.String[]" />
+        <Parameter Name="values" Type="System.Object[]" />
+        <Parameter Name="schema" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="table">To be added.</param>
+        <param name="keyColumns">To be added.</param>
+        <param name="keyValues">To be added.</param>
+        <param name="columns">To be added.</param>
+        <param name="values">To be added.</param>
+        <param name="schema">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
