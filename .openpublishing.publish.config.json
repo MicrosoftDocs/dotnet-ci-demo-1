@@ -32,6 +32,7 @@
       },
       "ECMA2Yaml": {
         "SourceXmlFolder": "ci-demo/xml",
+        "SourceMetadataFolder": "add/metadata",
         "OutputYamlFolder": "ci-demo/api",
         "Flatten": true,
         "id": "dotnet-ci-demo-1"
