@@ -32,8 +32,31 @@
   <Docs>
     <typeparam name="T">To be added.</typeparam>
     <typeparam name="K">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+      ABCD
+      
+      EDFDD
+      sdfsdfsdfsd
+      sfsdfsdfsdfsd
+    </summary>
+    <remarks>
+          <para>The add task operation runs asynchronously.</para>
+          <para>This method is not atomic; that is, it is possible for the method to start adding tasks and
+            then fail. The collection of tasks to add is broken down into chunks of size at most <see cref="F:Microsoft.Azure.Batch.Constants.MaxTasksInSingleAddTaskCollectionRequest" />,
+            and an AddTaskCollection request is issued for each chunk.  Requests may be issued in parallel according to
+            the <paramref name="parallelOptions" />.</para>
+          <para>Issuing a large number of simultaneous requests to the Batch service can incur HTTP connection restrictions.
+            If you are performing many of these operations in parallel (or have specified a large MaxDegreeOfParallelism in
+            the parallelOptions) and are seeing client side timeouts, please see 
+            http://msdn.microsoft.com/en-us/library/system.net.servicepointmanager.defaultconnectionlimit%28v=vs.110%29.aspx .</para>
+          <para>The progress of the operation in the face of errors is determined by <see cref="T:Microsoft.Azure.Batch.AddTaskCollectionResultHandler" /> behavior.
+            You do not normally need to specify this behavior, as the Batch client uses a default which works in normal circumstances.
+            If you do want to customize this behavior, specify an AddTaskCollectionResultHandler in the <see cref="P:Microsoft.Azure.Batch.JobOperations.CustomBehaviors" />
+            or <paramref name="additionalBehaviors" /> collections.</para>
+    </remarks>
+    <block subset="none" type="usage">
+      <para>Internally, the methods of the <see cref="T:System.Globalization.StringInfo" /> class call the methods of the <see cref="T:System.Globalization.CharUnicodeInfo" /> class to determine character categories. Starting with the [!INCLUDE[net_v462](~/includes/net-v462-md.md)], character classification is based on [The Unicode Standard, Version 8.0.0](http://unicode.org/versions/Unicode8.0.0). For the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] through the [!INCLUDE[net_v461](~/includes/net-v461-md.md)], it is based on [The Unicode Standard, Version 6.3.0](http://www.unicode.org/versions/Unicode6.3.0/).</para>
+    </block>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
