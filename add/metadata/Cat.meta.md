@@ -1,5 +1,5 @@
 ---
-uid: CatLibrary.Cat`2.CalculateFood*
+uid: CatLibrary.Cat`2.CalculateFood(System.DateTime)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
