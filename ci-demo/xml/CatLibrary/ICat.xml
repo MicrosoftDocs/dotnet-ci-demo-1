@@ -2,6 +2,8 @@
   <TypeSignature Language="C#" Value="public interface ICat : CatLibrary.IAnimal" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICat implements class CatLibrary.IAnimal" />
   <TypeSignature Language="DocId" Value="T:CatLibrary.ICat" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICat&#xA;Implements IAnimal" />
+  <TypeSignature Language="F#" Value="type ICat = interface&#xA;    interface IAnimal" />
   <AssemblyInfo>
     <AssemblyName>CatLibrary</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -17,9 +19,11 @@
   </Docs>
   <Members>
     <Member MemberName="eat">
-      <MemberSignature Language="C#" Value="public event EventHandler eat;" />
+      <MemberSignature Language="C#" Value="event EventHandler eat;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler eat" />
       <MemberSignature Language="DocId" Value="E:CatLibrary.ICat.eat" />
+      <MemberSignature Language="VB.NET" Value="Event eat As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.eat : EventHandler " Usage="member this.eat : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>CatLibrary</AssemblyName>

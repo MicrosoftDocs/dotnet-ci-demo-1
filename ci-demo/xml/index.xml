@@ -77,6 +77,7 @@
         <MemberSignature Language="C#" Value="public static void Play (this CatLibrary.ICat icat, string toy);" />
         <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Play(class CatLibrary.ICat icat, string toy) cil managed" />
         <MemberSignature Language="DocId" Value="M:CatLibrary.ICatExtension.Play(CatLibrary.ICat,System.String)" />
+        <MemberSignature Language="F#" Value="static member Play : CatLibrary.ICat * string -&gt; unit" Usage="CatLibrary.ICatExtension.Play (icat, toy)" />
         <MemberType>ExtensionMethod</MemberType>
         <ReturnValue>
           <ReturnType>System.Void</ReturnType>
@@ -101,6 +102,7 @@
         <MemberSignature Language="C#" Value="public static void Sleep (this CatLibrary.ICat icat, long hours);" />
         <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Sleep(class CatLibrary.ICat icat, int64 hours) cil managed" />
         <MemberSignature Language="DocId" Value="M:CatLibrary.ICatExtension.Sleep(CatLibrary.ICat,System.Int64)" />
+        <MemberSignature Language="F#" Value="static member Sleep : CatLibrary.ICat * int64 -&gt; unit" Usage="CatLibrary.ICatExtension.Sleep (icat, hours)" />
         <MemberType>ExtensionMethod</MemberType>
         <ReturnValue>
           <ReturnType>System.Void</ReturnType>

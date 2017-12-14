@@ -2,6 +2,7 @@
 <Framework Name="cat-1.0">
   <Namespace Name="CatLibrary">
     <Type Name="CatLibrary.Cat`2" Id="T:CatLibrary.Cat`2">
+      <Member Id="E:CatLibrary.Cat`2.CatLibrary#ICat#eat" />
       <Member Id="E:CatLibrary.Cat`2.ownEat" />
       <Member Id="F:CatLibrary.Cat`2.isHealthy" />
       <Member Id="M:CatLibrary.Cat`2.#ctor" />
