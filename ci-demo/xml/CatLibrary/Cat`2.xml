@@ -34,13 +34,7 @@
   <Docs>
     <typeparam name="T">To be added.</typeparam>
     <typeparam name="K">To be added.</typeparam>
-    <summary>
-      ABCD
-      
-      EDFDD
-      sdfsdfsdfsd
-      sfsdfsdfsdfsd
-    </summary>
+    <summary>Element can be written as &lt;my-tag-helper&gt; or &lt;my-tag-helper /&gt;.</summary>
     <remarks>
       <para>The add task operation runs asynchronously.</para>
       <para>This method is not atomic; that is, it is possible for the method to start adding tasks and
