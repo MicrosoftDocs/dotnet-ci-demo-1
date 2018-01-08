@@ -35,7 +35,7 @@
     <typeparam name="T">This type should be class and can new instance.</typeparam>
     <typeparam name="K">This type is a struct type, class type can't be used for this parameter.</typeparam>
     <summary>
-      <para>Here's main class of this <i>Demo</i>.</para>
+      <para>Here's main class of this <i>Demo</i>. This is changed content.</para>
       <para>You can see mostly type of article within this class and you for more detail, please see the remarks.</para>
       <para />
       <para>this class is a template class. It has two Generic parameter. they are: <typeparamref name="T" /> and <typeparamref name="K" />.</para>
