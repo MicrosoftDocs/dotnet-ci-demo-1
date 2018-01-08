@@ -87,9 +87,11 @@
           <Parameter Name="toy" Type="System.String" />
         </Parameters>
         <Docs>
-          <param name="icat">To be added.</param>
-          <param name="toy">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="icat">Cat</param>
+          <param name="toy">Something to play</param>
+          <summary>
+            Extension method to let cat play
+            </summary>
         </Docs>
         <Link Type="CatLibrary.ICatExtension" Member="M:CatLibrary.ICatExtension.Play(CatLibrary.ICat,System.String)" />
       </Member>
@@ -112,9 +114,11 @@
           <Parameter Name="hours" Type="System.Int64" />
         </Parameters>
         <Docs>
-          <param name="icat">To be added.</param>
-          <param name="hours">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="icat">The type will be extended.</param>
+          <param name="hours">The length of sleep.</param>
+          <summary>
+            Extension method hint that how long the cat can sleep.
+            </summary>
         </Docs>
         <Link Type="CatLibrary.ICatExtension" Member="M:CatLibrary.ICatExtension.Sleep(CatLibrary.ICat,System.Int64)" />
       </Member>

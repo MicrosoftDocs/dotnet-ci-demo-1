@@ -1,4 +1,4 @@
-<Type Name="ICat" FullName="CatLibrary.ICat">
+﻿<Type Name="ICat" FullName="CatLibrary.ICat">
   <TypeSignature Language="C#" Value="public interface ICat : CatLibrary.IAnimal" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICat implements class CatLibrary.IAnimal" />
   <TypeSignature Language="DocId" Value="T:CatLibrary.ICat" />
@@ -14,7 +14,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Cat's interface
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,7 +35,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            eat event of cat. Every cat must implement this event.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

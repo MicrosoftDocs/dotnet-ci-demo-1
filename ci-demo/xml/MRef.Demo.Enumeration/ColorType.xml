@@ -1,4 +1,4 @@
-<Type Name="ColorType" FullName="MRef.Demo.Enumeration.ColorType">
+﻿<Type Name="ColorType" FullName="MRef.Demo.Enumeration.ColorType">
   <TypeSignature Language="C#" Value="public enum ColorType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ColorType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:MRef.Demo.Enumeration.ColorType" />
@@ -12,8 +12,26 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+            Enumeration ColorType
+            </summary>
+    <remarks>
+      <para>
+            Red/Blue/Yellow can become all color you want.
+            </para>
+      <list type="bullet">
+        <listItem>
+            Orange = Red + Yellow
+            </listItem>
+        <listItem>
+            Purple = Red + Blue
+            </listItem>
+        <listItem>
+            Green = Blue + Yellow
+            </listItem>
+      </list>
+    </remarks>
+    <altmember cref="T:System.Object" />
   </Docs>
   <Members>
     <Member MemberName="Blue">
@@ -32,7 +50,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            blue like river
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Red">
@@ -51,7 +71,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            this color is red
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Yellow">
@@ -70,7 +92,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            yellow comes from desert
+            </summary>
       </Docs>
     </Member>
   </Members>

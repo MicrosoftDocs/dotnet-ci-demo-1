@@ -1,4 +1,4 @@
-<Type Name="Tom" FullName="CatLibrary.Tom">
+﻿<Type Name="Tom" FullName="CatLibrary.Tom">
   <TypeSignature Language="C#" Value="public class Tom" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Tom extends System.Object" />
   <TypeSignature Language="DocId" Value="T:CatLibrary.Tom" />
@@ -13,7 +13,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Tom class is only inherit from Object. Not any member inside itself.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -52,11 +54,16 @@
         <Parameter Name="b" Type="System.Tuple&lt;System.String,CatLibrary.Tom&gt;" />
       </Parameters>
       <Docs>
-        <param name="a">To be added.</param>
-        <param name="b">To be added.</param>
-        <summary>This is Tom oh yeah!!!!!.</summary>
-        <returns>To be added.</returns>
+        <param name="a">A complex input</param>
+        <param name="b">Another complex input</param>
+        <summary>
+            This is a Tom Method with complex type as return
+            </summary>
+        <returns>Complex @CatLibrary.TomFromBaseClass</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">This is not implemented</exception>
+        <exception cref="T:System.ArgumentException">This is the exception to be thrown when implemented</exception>
+        <exception cref="T:CatLibrary.CatException`1">This is the exception in current documentation</exception>
       </Docs>
     </Member>
   </Members>
